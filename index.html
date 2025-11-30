@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Niko</title>
+<style>
+    body {
+        background-color: black;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+    #niko {
+        width: 180px;
+        height: 180px;
+        background: radial-gradient(circle, #4da6ff, #003d80);
+        border-radius: 50%;
+        animation: pulse 3s infinite ease-in-out;
+    }
+    @keyframes pulse {
+        0% { transform: scale(1); box-shadow: 0 0 15px #4da6ff; }
+        50% { transform: scale(1.05); box-shadow: 0 0 30px #79c1ff; }
+        100% { transform: scale(1); box-shadow: 0 0 15px #4da6ff; }
+    }
+</style>
+</head>
+<body>
+<div id="niko"></div>
+</body>
+</html>
